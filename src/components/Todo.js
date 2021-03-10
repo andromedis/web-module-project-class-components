@@ -1,6 +1,9 @@
 import React from 'react';
 import './Todo.css';
 
+const CHECKED_BOX = '\u2612'
+const UNCHECKED_BOX = '\u2610'
+
 class Todo extends React.Component {
     render() {
         return (
@@ -8,7 +11,10 @@ class Todo extends React.Component {
                 onClick={() => this.props.toggle(this.props.task.id)} 
                 className={`task${this.props.task.completed ? ' completed' : ''}`}
             >
-                <p>{this.props.task.task}</p>
+                { this.props.task.completed 
+                    ? CHECKED_BOX 
+                    : UNCHECKED_BOX
+                } <span>{this.props.task.task}</span>
             </div>
         )
     }
