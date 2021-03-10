@@ -1,0 +1,32 @@
+.App {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0.5rem 2rem 2rem 2rem;
+    font-family: sans-serif;
+    border: 1px solid #8A8A8A;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.task {
+    font-size: x-large;
+}
+
+.task span {
+    font-size: large;
+}
+
+.completed {
+    color: #8A8A8A;
+}
+
+.completed span {
+    text-decoration: line-through;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+input, button {
+    margin-right: 0.5rem;
+}
