@@ -26,3 +26,7 @@
 form {
     margin-top: 2rem;
 }
+
+input, button {
+    margin-right: 0.5rem;
+}
